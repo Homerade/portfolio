@@ -1,0 +1,42 @@
+html {
+	width: 100%;
+	height: 100%;
+	background-color: black ;
+}
+
+#img1 {
+	width: 20vw;
+	display: block;
+	margin: 5vh auto .6vh;
+	padding: 2vh;
+}
+
+#img2 {
+	width: 30vw;
+	height: 206.281px;
+	display: inline-block;
+	margin: 0 0 0 17vw;
+	padding: 2vh;
+}
+
+#img3 {
+	width: 30vw;
+	display: inline-block;
+	margin: 0 auto 0;
+	padding: 2vh;
+}
+
+#jrsVid {
+	width: 45vw;
+	display: inline-block;
+	margin: 0 0 0 2vw;
+	padding: 2vh;
+}
+
+#img4 {
+	width: 45vw;
+	height: 299.578px;
+	display: inline-block;
+	margin: 0 auto 0;
+	padding: 2vh;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Stephanie Vizzi</title>
+		<link rel="stylesheet" type="text/css" href="../selfness.css">
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,300,500|Josefin+Sans:300,600|Source+Code+Pro:600|Raleway:300,500|Alegreya+Sans:100|Source+Sans+Pro:600|Abril+Fatface|Gravitas+One|Open+Sans|Work+Sans:400,100,200,300|Muli:200,300,400,900|Roboto:100,300,400|Amatic+SC" rel="stylesheet">
+		<script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	</head>
+
+	<a href='../page_selfSite.html'><span id='circle'></span></a>
+	<div id='innerCircle'></div>
+	<span class='homeText'>take me home</span>
+
+	<body>
+		
+		<div class='header' id='PYTHON-header'>	
+			<p class='projectTitle' id='PYTHON_projTitle'>PYTHON</p>		
+			<div class='PYTHON-angle-before' id='PYTHON-angle-L'></div>
+			<div class='PYTHON-angle-after' id='PYTHON-angle-R'></div> 
+			<p class='projDesc'>One of the initial coding languages I studied in my primary stages of programming. Here I used <code>python</code> to work with datasets, marrying creative visual composition to data communication. While tackling imports of varying sizes, managing uniformity and constraints, I came to better understand how to formulate visual space and package information, whether it be for more aesthetic or educational ends.</p>
+		</div>
+
+		<div class='marker' id='PYTHON_m1'>
+			<div class='stage'><span class='projectStageText'>PROJECT</span>1</div>
+			<hr class='titleHr'>
+			<p class='descHr'>Image filters which can take in any image, then modifying the image based on skewing of the RGB color values of the original. <!-- <br/><br/>The first example uses color constraints to alter each individual pixel forcing them to extremes and creating pixilated fuzz. <br/><br/>The second example, after color manipilation, chops the image into strips and rearranges them, giving a unique result each time and allowing for negative space. --></p>
+			<br/>
+		</div>
+
+		<div class='PYTHON_projSample' id='ps1'>
+			<img id='PYTHON_s1-img1' src='images/filter4_bmore.png'/>
+			<img id='PYTHON_s1-img2' src='images/filter4_pancake3.png'/>
+			<p id='PYTHON_miniDesc1'>This first example uses light and color constraints to alter each individual pixel forcing them to extremes and creating a pixilated fuzz.</p>
+			<p id='PYTHON_miniDesc2'>This second filter injects a darker color manipilation scheme, then chops the image into pieces and rearranges them randomly, resulting in a unique effect each time and allowing for negative space.</p>
+			<img id='PYTHON_s1-img3' src='images/filter5_pancake3.png'/>
+			
+			<img id='PYTHON_s1-img4' src='images/filter5_bmore2.png'/>
+		</div>
+
+		<div class='marker' id='PYTHON_m2'>
+			<div class='stage'><span class='projectStageText'>PROJECT</span> 2</div>
+			<hr class='titleHr'>
+			<p class='descHr'>Data visualization project imports US immigration data from the for nearly 200 years of American history. Being quite a large dataset, </p>
+			<br/>
+		</div>
+
+		<div class='PYTHON_projSample'>
+			<img id='PYTHON_s2-img1' src='images/myDataViz.png'/>
+		</div>
+
+
+		<script type="text/javascript">
+			
+			// home button
+
+			    $(function() {
+			      $('.homeText').hide();
+			      });  
+
+			    $('#circle').hover(
+			      function() {
+			        $('.homeText').show();
+			      },
+			      function() {
+			        $('.homeText').hide();
+			      });
+
+			// image z-index
+
+				for(let images of document.querySelectorAll('#ps1 img')) {
+					images.addEventListener('mouseover', (e) => {
+						e.target.classList.add('zTop')
+					}, false);
+
+					images.addEventListener('mouseout', (e) => {
+						e.target.classList.remove('zTop')
+					}, false); 
+				}   
+
+		</script>
+
+	</body>
+</html>		

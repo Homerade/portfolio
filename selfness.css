@@ -1,0 +1,957 @@
+@font-face {
+  font-family: 'Morbodoni';
+  src: url(fonts/morbodoni/Morbodoni-Trial.ttf) format("truetype");
+}
+@font-face {
+  font-family: 'Pistilli-Roman';
+  src: url(fonts/Pistilli-Roman.otf) format("opentype");
+}
+@font-face {
+  font-family: 'Tiffany Heavy Bold';
+  src: url(fonts/TiffanyHeavyBold.ttf) format("truetype");
+}
+@font-face {
+  font-family: 'Horsham Bold';
+  src: url(fonts/Horsham-Bold.ttf) format("truetype");
+}
+@font-face {
+  font-family: 'Yeseva One';
+  src: url(fonts/yeseva_one/YesevaOne-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: 'Sawasdee';
+  src: url(fonts/Sawasdee.ttf) format("truetype");
+}
+@font-face {
+  font-family: 'Quicksand-Light';
+  src: url(fonts/quicksand/Quicksand-Light.otf) format("truetype");
+}
+@font-face {
+  font-family: 'Quicksand-Regular';
+  src: url(fonts/quicksand/Quicksand-Regular.otf) format("truetype");
+}
+
+ /*TABLET*/
+/*@media only screen and (min-width: 600px) {*/
+
+/*MOBILE*/
+/*design for them first to load more quickly: 600 and smaller*/
+
+/*DESKTOP V */
+/*@media only screen and (min-width: 768px) {*/
+
+/*https://responsivedesign.is/articles/why-you-dont-need-device-specific-breakpoints/*/	
+/*https://css-tricks.com/snippets/css/media-queries-for-standard-devices/*/
+
+/*//////.................ALL - Page Header...................//////*/
+
+.homeText {
+	width: max-content;
+	position: fixed;
+	font-family: Poppins;
+	font-size: 2em; /*left out*/
+	background: rgba(255, 255, 255, .9);
+	/*border: solid #a0a0a0;*/
+	border-width: thin;
+	border-radius: 10vh;
+	font-weight: 100;
+	margin-left: 3vw;
+	margin-top: 2vh;
+	padding: 0 1vw;
+	z-index: 1000;
+}
+
+body {
+	padding: 0 0 15vh;
+}
+
+.header {
+	padding: 5vh 0 15vh;
+}
+
+#circle {
+	position: fixed;
+	border-radius: 50%;
+	width: 1%;
+	height: auto;
+	padding-top: 1%;
+	background: #9fa8a3;
+	border: 2px solid white;
+	outline: 2px solid #9fa8a3;
+	margin: 1vh;
+}   
+
+.projectTitle {
+	width: 100%;	
+	margin: 1vh 0;
+	font-family: 'Roboto';
+	font-size: 1.2em;
+	color: #28292b;
+	letter-spacing: 1px;
+}
+
+.projDesc {
+	margin: 1vh 0;
+	color: #4d5052;
+	font-family: 'Raleway';
+	font-size: 3vh;
+	font-weight: 300;
+	/*text-align: justify;*/
+}
+
+/*//////.................ALL - page Markers...................//////*/
+
+.marker {
+	clear: right;
+	width: 25vw;
+	/*margin: -5vh 5vw 10vh;*/
+	margin: 30vh 5vw 10vh;
+	float: left;
+}
+
+.stage {
+	clear: both;
+	font-family: Pistilli-Roman;
+	font-size: 30vh;
+	margin: 0;
+	text-align: right;
+	padding: 0;
+	/*line-height: 7vh;*/
+	display: block;
+	word-spacing: -1.5vw;
+}
+
+.stageText {
+	font-size: 15%;
+	vertical-align: baseline;
+}
+
+.titleHr{
+	clear: both;
+	width: 95%;
+	float: left;
+	margin-top: -4vh;
+}
+
+.descHr{
+	width: 95%;
+	float: left;	
+	font-family: 'Raleway', helvetica, sans-serif;
+	font-weight: 300;
+	color: #4d5052;
+	margin: -1vh 0;
+}
+
+/*//////.................JRS...................//////*/
+
+#jrs-header{
+	width: 40vw;
+	margin: 0 4vw 10vh;
+	float: right;
+	font-family: 'Raleway';	
+	font-size: 1.3em;
+	text-align: left;
+	display: block;
+	/*text-align: justify;*/
+}
+
+.angle-before, .angle-after {
+ 	width: 89%;
+	height: 21ex;
+	/*background-color: lightgray;*/
+	padding: 0;
+	margin: 0;
+ } 
+
+ /*original
+ 	-webkit-shape-outside: polygon(0 0, 100% 100%, 0 100%);
+	shape-outside: polygon(0 0, 100% 100%, 0 100%);
+	float: left;
+	-webkit-clip-path: polygon(0 0, 100% 100%, 0 100%);
+	clip-path: polygon(0 0, 100% 100%, 0 100%);*/
+
+.angle-before {
+	-webkit-shape-outside: polygon(0 0, 100% 100%, 0 100%);
+	shape-outside: polygon(0 0, 100% 100%, 0 100%);
+	float: left;
+	-webkit-clip-path: polygon(0 0, 100% 100%, 0 100%);
+	clip-path: polygon(0 0, 100% 100%, 0 100%);
+}    
+
+.angle-after {
+	-webkit-shape-outside: polygon(100% 0, 150% 100%, 0 100%);
+	shape-outside: polygon(100% 0, 150% 100%, 0 100%);
+	float: right;
+	-webkit-clip-path: polygon(100% 0, 150% 100%, 0 100%);
+	clip-path: polygon(100% 0, 150% 100%, 0 100%);
+} 
+
+.JRS_projSample{
+	clear: both;
+}
+
+/*//////.................JRS S1...................//////*/
+
+#JRS_m1 {
+	margin: -5vh 5vw 10vh;
+}
+
+#JRS_s1-img1 {
+	border: 1px solid #e6e7e7;
+	width: 45vw;
+	margin-left: 5vw;
+}
+
+#JRS_s1-img2 {
+	border: 1px solid #e6e7e7;
+	width: 50vw;
+	position: absolute;
+	margin-top: 10vh;
+	margin-left: -7vw;
+}
+
+#JRS_m2 {
+	float: right;
+	margin: 10vh 12vw;
+}
+
+/*//////.................JRS S2...................//////*/
+
+#JRS_s2-img1 {
+	width: 30vw;
+	margin-left: 3vw;
+}
+
+#JRS_s2-img2 {
+	width: 30vw;
+	position: absolute;
+	margin-left: -12vw;
+	margin-top: 15vh;
+}
+
+#JRS_s2-img3 {
+	width: 45vw;
+	position: absolute;
+	margin-left: 15vw;	
+}
+
+/*//////.................JRS S3...................//////*/
+
+
+#JRS_m3 .descHr {
+	width: 100%;
+}
+
+#JRS_s3-img1 {
+	width: 40vw;
+	margin-left: 3vw;
+	margin-top: 0vh;
+	position: absolute;
+}
+
+#JRS_s3-img2 {
+	width: 50vw;
+	margin-left: 40vw;
+	margin-top: -20vh;
+	position: absolute;
+}
+
+#JRS_s3-img3 {
+	width: 45vw;
+	position: absolute;
+	margin-top: 38vh;
+	margin-left: 4vw;	
+}	
+
+#JRS_s3-img4 {
+	width: 40vw;
+	position: relative;
+	border: 1px solid #e6e7e7;
+	margin-top: 30vh;
+	margin-left: 45vw;
+}
+
+/*//////.................BLOCS...................//////*/
+
+
+#blocs-header{
+	width: 46vw;
+	/*margin: 0 4vw 10vh;*/
+	margin: auto;
+	/*float: right;*/
+	font-family: 'Raleway';	
+	font-size: 1.3em;
+	letter-spacing: normal;
+	display: block;
+}
+
+.ffCSS {
+	padding: 5vh 0 30vh;
+}	
+
+#blocs-header > .projDesc {
+	text-align: justify;
+}
+
+#blocs-angle-R, #blocs-angle-L {
+	width: 47.5%;
+	/*width: 40%;*/ /*shape-test.html*/
+	height: 55vh;
+	/*background-color: lightgray;*/
+	padding: 0;
+	margin-top: 3vh;
+}
+
+
+ /*original
+ 	-webkit-shape-outside: polygon(0 0, 100% 100%, 0 100%);
+	shape-outside: polygon(0 0, 100% 100%, 0 100%);
+	float: left;
+	-webkit-clip-path: polygon(0 0, 100% 100%, 0 100%);
+	clip-path: polygon(0 0, 100% 100%, 0 100%);*/
+
+/*...Disabled: center the last word...*/
+/*#lastWord {
+	display: block;
+	text-align: center;
+}*/
+
+/*//////.................BLOCS S1...................//////*/
+
+#BLOCS_m1 {
+	margin: -5vh 5vw 10vh;
+}
+
+.BLOCS_projSample {
+	clear: both;
+}
+
+/*#BLOCS_s1-img1 {
+	width: 16vw;
+	margin: 30vh .5vw 0 0;
+}
+
+#BLOCS_s1-img2 {
+	width: 16vw;
+	vertical-align: -2vh;
+	margin: 0 .5vw 0;
+}
+
+#BLOCS_s1-img3 {
+	width: 23vw;
+	vertical-align: -4vh;
+	margin: 0 .5vw 0;
+}
+
+#BLOCS_s1-img4 {
+	width: 30vw;
+	position: relative;
+	vertical-align: top;
+}
+
+#BLOCS_s1-img5 {
+	width: 16vw;
+	position: relative;
+	margin: -30vh 0 0 -18vw;
+}*/
+
+      /*////....2nd setup....////*/
+
+#BLOCS_s1-img4 {
+	width: 40vw;
+	vertical-align: top;
+	margin: 30vh 0 0 10vw;
+}
+
+#BLOCS_s1-img5 {
+	width: 16vw;
+	margin-left: 30vw;
+}
+
+#BLOCS_s1-img1 {
+	width: 20vw;
+	margin: 10vh 1vw 0 15vw;
+}
+
+#BLOCS_s1-img2 {
+	width: 20vw;
+	vertical-align: -2vh;
+	margin: 0 1vw 0;
+}
+
+#BLOCS_s1-img3 {
+	width: 27vw;
+	vertical-align: -4vh;
+	margin: 0 1vw 0;
+}      
+
+code {
+	/*padding: 1vh;*/
+	background-color: #EFF0F1;
+	/*border-radius: 10%;*/
+	border: 1px solid #E5E5E5;
+}
+
+/*//////.................BLOCS S2...................//////*/
+
+
+#BLOCS_m2 {
+	float: right;
+	margin: 20vh 12vw;
+} 
+
+#BLOCS_s2-img1 {
+	width: 37vw;
+	position: absolute;
+	margin: -25vh 0 0 5vw; /*-30vh 0 0 5vw;*/
+}
+
+#BLOCS_s2-img2 {
+	width: 48vw;
+	border: 1px solid #e6e7e7;
+	position: relative;
+	margin: 5vh 0 0 20vw; /*0vh 0 0 20vw;*/
+}
+
+#BLOCS_s2-img3 {
+	width: 30vw;
+	position: absolute;
+	margin: 15vh 0 0 -7vw; /*10vh 0 0 -7vw;*/
+}
+
+/*//////.................BLOCS S3...................//////*/
+
+#BLOCS_m3{
+	margin: 30vh 5vw 10vh;
+}
+
+#BLOCS_s3-img1 {
+	width: 50vw;
+	/*position: absolute;*/
+	float: right;
+	border: 1px solid #e6e7e7;
+	margin: -25vh 7vw 0 0;
+	z-index: 99;
+}
+
+#BLOCS_s3-img2 {
+	width: 30vw;
+	position: absolute;
+	border: 1px solid #e6e7e7;
+	margin: 20vh 0 0 13vw; /*margin: 10vh 0 0 13vw;*/
+	z-index: -1;
+}
+
+#BLOCS_s3-img3 {
+	width: 40vw;
+	border: 1px solid #e6e7e7;
+	margin: -7vh 0 0 3vw; /*margin: -30vh 0 0 3vw;*/
+	/*padding-bottom: 20vh;*/
+	position: relative;
+	z-index: -3;
+}
+
+#BLOCS_s3-img4 {
+	width: 30vw;
+	border: 1px solid #e6e7e7;
+	position: absolute;
+	margin: 21vh 0 0 -35vw; /*margin: 0 0 0 -35vw;*/ 
+	z-index: -4;
+}	
+
+#BLOCS_s3-img5 {
+	width: 50vw;
+	position: relative;
+	border: 1px solid #e6e7e7;
+	margin: 10vh 0 0 35vw;
+}
+
+#BLOCS_s3-img6 {
+	width: 25vw;
+	position: absolute;
+	border: 1px solid #e6e7e7;
+	margin: 15vh 0 0 -15vw;
+	z-index: -2
+}
+
+/*//////.................BMORE VOTE...................//////*/
+
+#bmoreVote-header{
+	width: 60vw;
+	height: max-content;
+	margin: 0 4vw 10vh;
+	float: left;
+	font-family: 'Raleway';	
+	font-size: 1.3em;
+	text-align: left;
+	display: block;
+	padding-bottom: 0;
+	/*text-align: justify;*/
+}
+
+.bmoreVote_angle-after {
+	-webkit-shape-outside: polygon(0 0, 100% 0, 100% 100%); /*top/left, top/right, bottom/right*/
+	shape-outside: polygon(0 0, 100% 0, 100% 100%);
+	float: right;
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%);
+	clip-path: polygon(0 0, 100% 0, 100% 100%);
+}
+
+#bmoreVote-angle {
+ 	width: 95%;
+	height: 35ex;
+	/*background-color: lightgray;*/
+	padding: 0;
+	margin: 0;
+ } 
+
+#bVote_warning {
+	position: absolute;
+	width: 25vw;
+	right: 0;
+	font-family: courier;
+	border: 2px solid #a1a1a1;
+	padding: 3vh 1.5vw;
+	margin: 20vh 20vw 0 0;
+	transform: rotate(0.02turn);
+}
+
+#bVote_warning p:first-child {
+	color: red;
+}
+
+#bVote_terriguy {
+	width: 15vw;
+	float: right;
+}
+ /*//////.................BMORE VOTE S1...................//////*/
+
+ #beVote_m1 {
+ 	float: right;
+ 	margin: 5vh 10vw 10vh;
+ }
+
+#bVote_s1-img1 {
+	width: 60vw;
+	margin: -5vh 0 0 5vw;
+	/*display: block;*/
+}
+
+#bVote_s1-img2 {
+	width: 40vw;
+	border: 1px solid #e6e7e7;
+	position: absolute;
+	margin: 5vh 0 0 -20vw; 
+}
+
+/*//////.................BMORE VOTE S2...................//////*/
+
+#bVote_m2 {
+	margin: 30vh 5vw 10vh;
+}
+
+#bVote_s2-img1 {
+	width: 40vw;
+	float: right;
+	margin: -20vh 25vw 0 0;
+}
+
+/*//////.................BMORE VOTE S3...................//////*/
+
+#bVote_m3 {
+	float: right;
+	margin-right: 12vw;
+}
+
+#bVote_s3-img1 {
+	width: 50vw;
+	border: 1px solid #e6e7e7;
+	background: white;
+	padding: 2vh;
+	margin: -10vh 0 0 7vw; 
+}
+
+#bVote_s3-img2 {
+	width: 50vw;
+	border: 1px solid #e6e7e7;
+	background: white;
+	padding: 2vh;
+	position: absolute;
+	margin: 0 0 0 -15vw;
+	z-index: 2;
+}
+
+#bVote_s3-img3 {
+	width: 50vw;
+	border: 1px solid #e6e7e7;
+	background: white;
+	padding: 2vh;
+	position: absolute;
+	margin: 17vh 0 0 -13vw;
+	z-index: 1;
+}
+
+/*//////.................PROCESSING...................//////*/
+
+#process_projTitle {
+	width: 46vw;
+	margin-left: -2vw;
+	display: block;
+	position: absolute;
+}
+
+#process-header{
+	width: 46vw;
+	margin: auto;
+	font-family: 'Raleway';	
+	font-size: 1.3em;
+	display: block;
+	padding: 5vh 0 5vh;
+}
+
+#process-header > .projDesc {
+	text-align: justify;
+}
+
+#process-angle-R, #process-angle-L {
+	width: 35%;
+	height: 50vh;
+	/*background-color: lightgray;*/
+	padding: 0;
+	/*margin-top: 3vh;*/
+}
+
+.process-angle-before {
+	-webkit-shape-outside: polygon(0 0, 100% 0, 0 100%); /*top/left, top/right, bottom/left*/
+	shape-outside: polygon(0 0, 100% 0, 0 100%);
+	float: left;
+	-webkit-clip-path: polygon(0 0, 100% 0, 0 100%);
+	clip-path: polygon(0 0, 100% 0, 0 100%);
+}    
+
+.process-angle-after {
+	-webkit-shape-outside: polygon(0 0, 100% 100%, 0 100%);
+	shape-outside: polygon(100% 0, 100% 100%, 0 100%);
+	float: right;
+	-webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%);
+	clip-path: polygon(100% 0, 100% 100%, 0 100%);
+}
+
+.projectStageText {
+	font-size: 13%;
+}
+
+/*//////.................PRCOCESS S1...................//////*/
+
+.hoverText1 {
+	float: right;
+	margin-top: 10vh;
+	font-family: courier;
+	font-weight: 300;
+	color: #4d5052;
+	font-size: 2vh;
+}
+
+.PROCESS_projSample {
+	clear: both;
+	margin: 0 5vw;
+}
+
+#PROCESS_s1-vid1 {
+	width: 30vw;
+	border: 1px solid #B9B9B9;
+	border-bottom: 0;
+	margin: -25vh 0 0 30vw;
+}
+
+/*//////.................PRCOCESS S2...................//////*/
+
+#PROCESS_m2 {
+	float: right;
+}
+/*
+#PROCESS_sample2 {
+	position: absolute;
+}*/
+
+#PROCESS_s2-vid1 {
+	width: 30vw;
+	position: absolute;
+	margin: -20vh 0 0 0;
+}
+
+.hoverText2 {
+	margin: -10vh 0 0 40vw;
+	position: absolute;
+	font-family: courier;
+	font-weight: 300;
+	color: #4d5052;
+	font-size: 2vh;
+}
+
+#PROCESS_s2-vid2 {
+	width: 30vw;
+	margin: 0vh 0 0 35vw;
+}
+
+/*//////.................PRCOCESS S3...................//////*/
+
+/* to revert back to tier formation: comment out #PROCESS_m3 and switch s3-vid1 margins */
+
+#PROCESS_m3 {
+	margin-top: 45vh;
+}
+
+.hoverText3 {
+	/*margin-left: 25vw;*/  /*bottom left*/
+	float: right; /*comment out for bottom left*/
+	display: inline;
+	vertical-align: baseline;
+	font-family: courier;
+	font-weight: 300;
+	color: #4d5052;
+	font-size: 2vh;
+}
+
+#PROCESS_s3-vid1 {
+	width: 40vw;
+	margin: -50vh 0 0 35vw; /*change to -50vh 0 0 1vw for bottom left*/
+}
+
+/*//////.................PYTHON...................//////*/
+
+
+#PYTHON-header{
+	width: 46vw;
+	margin: auto;
+	font-family: 'Raleway';	
+	font-size: 1.3em;
+	display: block;
+	padding: 5vh 0 5vh;
+}
+
+#PYTHON_projTitle {
+	text-align: center;
+}
+
+#PYTHON-header > .projDesc {
+	text-align: justify;
+}
+
+#PYTHON-angle-R, #PYTHON-angle-L {
+	width: 45%;
+	height: 45vh;
+	/*background-color: lightgray;*/
+	padding: 0;
+	/*margin-top: 3vh;*/
+}
+
+.PYTHON-angle-before {
+	-webkit-shape-outside: polygon(0 0, 100% 0, 0 100%); /*top/left, top/right, bottom/left*/
+	shape-outside: polygon(0 0, 100% 0, 0 100%);
+	float: left;
+	-webkit-clip-path: polygon(0 0, 100% 0, 0 100%);
+	clip-path: polygon(0 0, 100% 0, 0 100%);
+}   
+
+.PYTHON-angle-after {
+	/*-webkit-shape-outside: polygon(0 0, 100% 100%, 0 100%);*/
+	shape-outside: polygon(0 0, 100% 100%, 100% 0);
+	float: right;
+	/*-webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%);*/
+	clip-path: polygon(0 0, 100% 100%, 100% 0);
+}
+
+/*//////.................PYTHON S1...................//////*/
+
+#PYTHON_m1 {
+	float: right;
+	margin-top: 20vh;
+}
+
+.PYTHON_projSample {
+	clear: both;
+	margin-left: 5vw;
+}
+
+#PYTHON_s1-img1 {
+	width: 40vw;
+	position: absolute;
+	margin: -10vh 0 0 0;
+}
+
+#PYTHON_miniDesc1 {
+	width: 25vw;
+	font-family: 'Raleway';
+	font-weight: 300;
+	margin-top: -25vh;
+}
+
+#PYTHON_s1-img2 {
+	width: 35vw;
+	margin: 10vh 0 0 35vw;
+	position: relative;
+}
+
+.zTop {
+	z-index: 100;
+	box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+	/*border: 1em solid white;*/
+}
+
+#PYTHON_miniDesc2 {
+	width: 25vw;
+	font-family: 'Raleway';
+	font-weight: 300;
+	display: inline-block;
+	margin: 50vh 2vw 10vh 7vw;
+	vertical-align: top;
+}
+
+#PYTHON_s1-img3 {
+	width: 38vw;
+	margin: 20vh 0 0 0;
+}
+
+#PYTHON_s1-img4 {
+	width: 40vw;
+	/*margin-top: -20vh;*/
+}
+
+/*//////.................PYTHON S2...................//////*/
+
+#PYTHON_s2-img1 {
+	width: 70vw;
+	display: block;
+	margin: 0 auto;
+}
+
+/*//////.................PYTHON S2...................//////*/
+
+.resumePage {
+	width: 60vw;
+	font-family: Sawasdee;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 5vh;
+}
+
+.resumePage header {
+	font-size: 3em;
+	text-align: center;
+	font-family: Quicksand-Light;
+	/*font-family: Sawasdee;*/
+}
+
+#RESUME_contact {
+	width: max-content;
+	margin: 0 auto;
+}
+
+#RESUME_contact span {
+	display: inline-block;
+	text-align: center;
+	margin: 1vh 2vw;
+}
+
+.RESUME_sectionHeader {
+	font-size: 3vh;
+	margin: 15vh 0 5vh;
+}
+
+.RESUME_schooling {
+	font-weight: bolder;
+	font-size: 1.2em;
+}
+
+.titlewCarrot {
+	float: left;
+}
+
+.RESUME_present {
+	width: max-content;
+	display: inline;
+	margin: 5vh 0 2vh;
+	text-decoration: underline;
+	text-underline-position: under;
+}
+
+.Rcarrot {
+	display: inline;
+}
+
+#RESUME_skillSet {
+	clear: both;
+	word-spacing: 0;
+	padding: 5vh 0;
+}
+
+.skill {
+	display: inline-block;
+	margin: 1vh 0;
+}
+
+.RESUME_job {
+	display: inline-block;
+	margin: 1.5vh 0;
+}
+
+.RESUME_jobTitle {
+	width: max-content;
+	font-size: 1.1em;
+	float: left;
+	text-decoration: underline;
+	text-underline-position: under;
+}
+
+.RESUME_jobEmp {
+	float: left;
+	font-size: 1.1em;
+}
+
+.RESUME_jobDate {
+	float: right;
+	font-size: 1.1em;
+}
+
+.RESUME_jobDesc {
+	clear: both;
+	text-align: justify;
+	margin: 1em 0;
+	line-height: 1.7;
+}
+
+.RESUME_exCirrucBlock {
+	text-align: justify;
+	text-indent: -1.5em;
+	margin: 5vh 0 5vh 1.5em;
+}
+
+.RESUME_exCurricTitle {
+	display: inline;
+	font-size: 1.1em;
+}
+
+.RESUME_exCurricDesc {
+	display: inline;
+	line-height: 1.7;
+}
+
+/*//////.................in pic scrolling...................//////*/
+
+.scroll{
+	float: left;
+	overflow: auto;
+	overflow-x: hidden; 
+	max-width: 250px;	
+	max-height: 135px;
+	margin: 10px 2%;
+
+}
+
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;
+}
+
+

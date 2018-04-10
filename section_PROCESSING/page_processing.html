@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Stephanie Vizzi</title>
+		<link rel="stylesheet" type="text/css" href="../selfness.css">
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,300,500|Josefin+Sans:300,600|Source+Code+Pro:600|Raleway:300,500|Alegreya+Sans:100|Source+Sans+Pro:600|Abril+Fatface|Gravitas+One|Open+Sans|Work+Sans:400,100,200,300|Muli:200,300,400,900|Roboto:100,300,400|Amatic+SC" rel="stylesheet">
+		<script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	</head>
+
+	<a href='../page_selfSite.html'><span id='circle'></span></a>
+	<div id='innerCircle'></div>
+	<span class='homeText'>take me home</span>
+
+	<body>
+		<div class='header' id='process-header'>	
+			<p class='projectTitle' id='process_projTitle'>PROCESSING.JS</p>		
+			<div class='process-angle-before' id='process-angle-L'></div>
+			<div class='process-angle-after' id='process-angle-R'></div> 
+			<p class='projDesc'>The following are works made with <code>processing.js</code>, the very first language I learned when starting to code. This was my first introduction to the principles of <code>javascript</code> where common js methods were used to build environments including creating and maneuvering objects in the plane. <code>Processing</code> is a visual language often used for building playable creative pieces. These examples are a few experimentations in writing graphic and interactive code which reach to connect in response to the user outside and materials imported in.</p>
+		</div>
+
+		<div class='marker' id='PROCESS_m1'>
+			<div class='stage'><span class='projectStageText'>PROJECT</span>1</div>
+			<hr class='titleHr'>
+			<p class='descHr'>An exercise in creating a changing visual plane. The main building blocks in this project and central concepts to be grasped were the setting up of arrays, loops and looping over array items, creating new objects and pushing them into the array, as well as the creation of functions outlining movement and setting them in motion.</p>
+			<br/>
+			<p class='hoverText1'>&#60;hover to play&#62;</p>
+		</div>
+
+		<div class='PROCESS_projSample'>
+			<video class='PROCESS-vid' id='PROCESS_s1-vid1' src='images/bars.mp4'></video>
+		</div>
+
+		<div class='marker' id='PROCESS_m2'>
+			<div class='stage'><span class='projectStageText'>PROJECT</span> 2</div>
+			<hr class='titleHr'>
+			<p class='descHr'>These sketches are plays on randomness and jolted, spasmic displays of the natural and digital together. Pixel manipulation and brightness and color mutation are used in reaction to imported video. The video, spliced together from cuts of internet finds, features different examples of lightning, providing the first level of dramatic light and darkness which the digital layer then amplifies.</p>
+			<br/>
+		</div>
+
+		<div class='PROCESS_projSample'>
+			<video class='PROCESS-vid' id='PROCESS_s2-vid1' src='images/rainbow_snow.mp4'></video>
+			<p class='hoverText2'>&#60;hover to play&#62;</p>
+			<video class='PROCESS-vid' id='PROCESS_s2-vid2' src='images/monotone.mp4'></video>
+		</div>
+
+		<div class='marker' id='PROCESS_m3'>
+			<div class='stage'><span class='projectStageText'>PROJECT</span> 3</div>
+			<hr class='titleHr'>
+			<p class='descHr'>Enabling user interaction through cursor watching and color and shape changes dependent on cursor position. The result is a manipulated windchime following the user's movements and introducing color on user keyboard input.</p>
+			<br/>
+		</div>
+
+		<div class='PROCESS_projSample'>
+			<p class='hoverText3'>&#60;hover to play&#62;</p>
+			<video class='PROCESS-vid' id='PROCESS_s3-vid1' src='images/reverse.mov'></video>
+		</div>
+
+		<script type="text/javascript">
+		
+		// home button
+
+		    $(function() {
+		      $('.homeText').hide();
+		      });  
+
+		    $('#circle').hover(
+		      function() {
+		        $('.homeText').show();
+		      },
+		      function() {
+		        $('.homeText').hide();
+		      });
+
+		// PROCESSING video hover play   
+
+			for(let videos of document.querySelectorAll('video')) {
+				videos.addEventListener('mouseover', (e) => {
+					e.target.play()
+				}, false);
+
+			videos.addEventListener('mouseout', (e) => {
+				e.target.pause()
+			}, false); 
+		}
+
+
+		</script>
+
+	</body>
+</html>	

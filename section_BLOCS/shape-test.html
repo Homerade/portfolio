@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Stephanie Vizzi</title>
+		<link rel="stylesheet" type="text/css" href="../selfness.css">
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,300,500|Josefin+Sans:300,600|Source+Code+Pro:600|Raleway:300,500|Alegreya+Sans:100|Source+Sans+Pro:600|Abril+Fatface|Gravitas+One|Open+Sans|Work+Sans:400,100,200,300|Muli:200,300,400,900|Roboto:100,300,400|Amatic+SC" rel="stylesheet">
+		<script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	</head>
+
+	<a href='../page_selfSite.html'><span id='circle'></span></a>
+	<div id='innerCircle'></div>
+	<span class='homeText'>take me home</span>
+
+	<body>
+		<div class='header' id='blocs-header'>
+			<p class='projectTitle'>BLOCS</p>
+			<!-- <div class='angle-before' id='blocs-angle-L'></div>
+			<div class='angle-after' id='blocs-angle-R'></div> -->
+			<svg xmlns="http://www.w3.org/2000/svg" class='BLOCS_svg' width='49%' height='75vh' viewBox='0 0 100 100' float='left'>
+				<polygon points="0,0 0,150 100,150"/>
+			</svg>	
+			<svg xmlns="http://www.w3.org/2000/svg" class='BLOCS_svg' width='49%' height='75vh' viewBox='0 0 100 100' float='right'>
+				<polygon points="0,150 100,150 100,0"/>
+			</svg>
+			<p class='projDesc'>A project site developed using an original concept for further exploration into web development. The site serves as a hub for groups to publicly pledge their participate in civic activities as a unit therefore making it easier for organizers to amass participants, anticipate the number of attendees and for individuals to tag along as part of a group. The site features a calender of events, registration, login & search capabilities based on zip code, group or theme.</p>
+		</div>
+
+		<!-- to center the last word: <span id='lastWord'>theme.</span> -->
+
+		<div class='marker' id='BLOCS_m1'>
+			<div class='stage'><span class='stageText'>STAGE</span>1</div>
+			<hr class='titleHr'>
+			<p class='descHr'>The first part of this project was very conceptual. Imagining a platform that would invite people to be active, making use of pre-existing communities and groups of friends while also reaching out to individuals to join in. How would a person use the site, what would they be looking for?</p>
+		</div>
+
+		<!-- <div class='BLOCS_projSample'>
+				<img id='BLOCS_s1-img1' src='images/Blocs_pp_hpStack.jpg'/>
+				<img id='BLOCS_s1-img2' src='images/Blocs_pp_hp.jpg'/>
+				<img id='BLOCS_s1-img3' src='images/Blocs1_home.jpg'/>
+				<img id='BLOCS_s1-img4' src='images/Blocs2_logo.jpg'/>
+				<img id='BLOCS_s1-img5' src='images/Blocs_pp_singleMonth.jpg'/>
+		</div> -->
+
+		<!-- /*////....2nd setup....////*/ -->
+
+		<div class='BLOCS_projSample1'>
+			<img id='BLOCS_s1-img4' src='images/Blocs2_logo.jpg'/>
+			<img id='BLOCS_s1-img5' src='images/Blocs_pp_singleMonth.jpg'/>
+			<img id='BLOCS_s1-img1' src='images/Blocs_pp_hpStack.jpg'/>
+			<img id='BLOCS_s1-img2' src='images/Blocs_pp_hp.jpg'/>
+			<img id='BLOCS_s1-img3' src='images/Blocs1_home.jpg'/>
+		</div>
+
+		<div class='marker' id='BLOCS_m2'>
+			<div class='stage'><span class='stageText'>STAGE</span> 2</div>
+			<hr class='titleHr'>
+			<p class='descHr'>Starting to put into place mechanisms under the hood that would make it a functional site. Structured in <code>node.js</code> using <code>express</code> and <code>handlebars</code> with <code>mongoDB</code> on the back end, I've got <code>express router</code> rendering my pages, adding in <code>express session</code> and <code>passport</code> for user sign in and registration with a user <code>schema</code> for mongoose.</p>
+		</div>
+
+		<div class='BLOCS_projSample'>
+			<img id='BLOCS_s2-img1' src='images/Blocs_mLab_zoom.png'/>
+			<img id='BLOCS_s2-img2' src='images/blocs_regForm.png'/>			
+			<img id='BLOCS_s2-img3' src='images/Blocs_code-reg.png'/>
+		</div>	
+
+		<div class='marker' id='BLOCS_m3'>
+			<div class='stage'><span class='stageText'>STAGE</span> 3</div>
+			<hr class='titleHr'>
+			<p class='descHr'>Fully fledged homepage, building on top of user accounts with event search features by location, topic and host group. The addition of an open source calendar, to which users can add events via multiple buttons posting to the database through forms. Plus some custom cosmetic changes to the calendar incuding tooltips for quick glance event info.</p>
+		</div>	
+
+		<div class='BLOCS_projSample' id='PROCESS_sample2'>
+			<img id='BLOCS_s3-img1' src='images/Blocs_final.jpg'/>
+			<img id='BLOCS_s3-img2' src='images/Blocs_url_params.jpg'/>
+			<img id='BLOCS_s3-img3' src='images/Blocs_cal_eventListCrop.jpg'/>
+			<img id='BLOCS_s3-img4' src='images/Blocs_eventForm1_crop.jpg'/>
+			<img id='BLOCS_s3-img5' src='images/Blocs_cal_month.png'/>		
+			<img id='BLOCS_s3-img6' src='images/Blocs_cal_pointerCrop.jpg'/>
+		</div>
+
+		<script type="text/javascript">
+		
+		    $(function() {
+		      $('.homeText').hide();
+		      });  
+
+		    $('#circle').hover(
+		      function() {
+		        $('.homeText').show();
+		      },
+		      function() {
+		        $('.homeText').hide();
+		      });
+
+		    var floater = $('#BLOCS_s1-img5');
+		    var maxVH =  -(35 * $( window ).height())/100;
+		    floater.css('margin-top', -(17 * $( window ).height())/100);
+
+		    $(window).scroll(function(e) {
+
+		     if ( 
+		            ( $(document).scrollTop() > 50 && $(document).scrollTop() < 350 ) &&
+		            ( parseInt(floater.css('margin-top')) >= maxVH )
+		        ) { 
+		          floater.css('margin-top','-=3');
+		          }
+		      });
+
+			      
+		</script>
+
+
+	</body> 
+</html>		
+
+
+
+

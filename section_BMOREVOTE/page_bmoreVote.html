@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Stephanie Vizzi</title>
+		<link rel="stylesheet" type="text/css" href="../selfness.css">
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,300,500|Josefin+Sans:300,600|Source+Code+Pro:600|Raleway:300,500|Alegreya+Sans:100|Source+Sans+Pro:600|Abril+Fatface|Gravitas+One|Open+Sans|Work+Sans:400,100,200,300|Muli:200,300,400,900|Roboto:100,300,400|Amatic+SC" rel="stylesheet">
+		<script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+	</head>
+
+	<a href='../page_selfSite.html'><span id='circle'></span></a>
+	<div id='innerCircle'></div>
+	<span class='homeText'>take me home</span>
+
+	<body>
+
+		<div class='header' id='bmoreVote-header'>
+			<p class='projectTitle'>Bmore Vote</p>
+			<div class='bmoreVote_angle-after' id='bmoreVote-angle'></div> 
+			<p class='projDesc'>Bmore Vote is a project focusing on public opinion and engagement in municipal activity. In practice it would allow city residents to know about key measures passing through the city council, understand them better and voice opinion in otherwise closed decision making.</p>
+		</div>
+
+		<div id='bVote_warning'>
+			<p>WARNING</p>
+			<p>Baltimore does not currently have their API fully setup.</p>
+			<img id='bVote_terriguy' src='images/comic-fear.png'/>
+			<p>Temporarily subbing in Seattle data to populate the app.</p>
+		</div>	
+
+		<div class='marker' id='beVote_m1'>
+			<div class='stage'><span class='stageText'>STAGE</span>1</div>
+			<hr class='titleHr'>
+			<p class='descHr'>Research into Baltimore City Council data channels, from Open Data Baltimore to the legislative process and beyond, revealed the legistar tracking system software used by the city, publicly posting highly detailed activity tracking information with API access.</p>
+		</div>
+
+		<div class='bVote_projSample'>
+			<img id='bVote_s1-img1' src='images/bVote_legistar_data.png'/>
+			<img id='bVote_s1-img2' src='images/bVote_legistarAPI_crop.png'/>
+		</div>
+
+		<div class='marker' id='bVote_m2'>
+			<div class='stage'><span class='stageText'>STAGE</span> 2</div>
+			<hr class='titleHr'>
+			<p class='descHr'>In order to open access to API information and make it available in the app, an API proxy is setup using <code>node.js</code> and <code>axios</code>. This allows for the construction of our app skeleton, funneling in the API information, custom selecting desired data, re-naming it and setting up our url parameters.</p>
+		</div>
+
+		<div class='BLOCS_projSample'>
+			<img id='bVote_s2-img1' src='images/bVote_proxy.png'/>
+		</div>	
+
+		<div class='marker' id='bVote_m3'>
+			<div class='stage'><span class='stageText'>STAGE</span> 3</div>
+			<hr class='titleHr'>
+			<p class='descHr'>Front end built in my first go with <code>react.js</code>. Unstyled, pure data delivery version with <code>react router</code> providing the main list of legistar matters shown with select info and clickable links leading to individual matter routes served up via id parameters. Voting 'for' or 'against' made possible on individual matter pages.</p>
+		</div>
+
+		<div class='BLOCS_projSample'>
+			<img id='bVote_s3-img1' src='images/bVote_ordList.png'/>
+			<img id='bVote_s3-img2' src='images/bVote_singleOrd.png'/>
+			<img id='bVote_s3-img3' src='images/bVote_thx.png'/>
+		</div>
+
+		<script type="text/javascript">
+		
+		    $(function() {
+		      $('.homeText').hide();
+		      });  
+
+		    $('#circle').hover(
+		      function() {
+		        $('.homeText').show();
+		      },
+		      function() {
+		        $('.homeText').hide();
+		      });
+			      
+		</script>	
+			
+	</body>
+</html>		

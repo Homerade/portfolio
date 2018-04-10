@@ -1,0 +1,122 @@
+@font-face {
+  font-family: 'Morbodoni';
+  src: url(fonts/morbodoni/Morbodoni-Trial.ttf) format("truetype");
+}
+@font-face {
+  font-family: 'Pistilli-Roman';
+  src: url(fonts/Pistilli-Roman.otf) format("opentype");
+}
+@font-face {
+  font-family: 'Tiffany Heavy Bold';
+  src: url(fonts/TiffanyHeavyBold.ttf) format("truetype");
+}
+@font-face {
+  font-family: 'Horsham Bold';
+  src: url(fonts/Horsham-Bold.ttf) format("truetype");
+}
+@font-face {
+  font-family: 'Yeseva One';
+  src: url(fonts/yeseva_one/YesevaOne-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: 'Quicksand-Light';
+  src: url(fonts/quicksand/Quicksand-Light.otf) format("truetype");
+}
+
+/*body{
+	margin-top: 10%;
+}*/
+
+#letters{
+	margin-top: 15vh; /*moved this from above*/
+	float: left;
+	width: 61.7%;
+	/*margin-left: 25px;*/  /*bunched version*/
+	/*margin-left: 2px;*/  /*clean version*/
+	z-index: 1;
+}
+
+/*.pushOut{
+	width: 65%;
+}*/
+
+#key{
+	font-size: 13em;
+	margin: 0;
+	padding: 0;
+	word-wrap: break-word;
+	/*line-height: 150px;*/ /*bunched version*/
+	font-family: Pistilli-Roman;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+#letters span {
+	/*margin: -45px; */  /*bunched version*/
+	/*margin: -20px;*/     /*clean version*/
+}
+
+.hoverRed:hover{
+	color: #ff4545;
+}
+
+.hoverGrey:hover{
+	color: grey;
+}
+
+.verbal{
+	/*width: 37%;*/
+	height: 35%;
+	/*float: left;*/
+	margin-left: 61.7%;
+	margin-top: 15vh;
+	margin-right: 5px;
+	z-index: 99;
+	position: fixed;
+	/*border: 1px solid black;*/
+}
+
+.smallBox{
+	width: 30%;
+	margin-left: 50px;
+}
+
+#name {
+	font-family: 'Quicksand-Light', sans-serif;
+	font-size: 6em;
+	letter-spacing: 6px;
+	position: absolute;
+	margin: 20vh 0 0 12vw;
+	color: #ff4545;
+	/*color: grey;*/
+}
+
+.catTitle {
+	text-align: center;
+	font-family: 'Open-Sans', sans-serif;
+	font-size: 3em;
+	letter-spacing: 6px;
+	margin: 15px;
+}
+
+.hr {
+	height: .3vh;
+	color: #000000;
+	background-color: #000000;
+	border: 0;
+}
+
+.subTitle{
+	text-align: center;
+	font-family: 'Open-Sans', sans-serif;
+	font-size: 2em;
+	letter-spacing: 2px;
+	margin: 15px;
+	word-spacing: .7vw;
+}
+
+
+
