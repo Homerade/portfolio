@@ -8,7 +8,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	</head>
 
-	<a href='../page_selfSite.html'><span id='circle'></span></a>
+	<a href='../index.html'><span id='circle'></span></a>
 	<div id='innerCircle'></div>
 	<span class='homeText'>take me home</span>
 
@@ -17,7 +17,7 @@
 			<p class='projectTitle' id='process_projTitle'>PROCESSING.JS</p>		
 			<div class='process-angle-before' id='process-angle-L'></div>
 			<div class='process-angle-after' id='process-angle-R'></div> 
-			<p class='projDesc'>The following are works made with <code>processing.js</code>, the very first language I learned when starting to code. This was my first introduction to the principles of <code>javascript</code> where common js methods were used to build environments including creating and maneuvering objects in the plane. <code>Processing</code> is a visual language often used for building playable creative pieces. These examples are a few experimentations in writing graphic and interactive code which reach to connect in response to the user outside and materials imported in.</p>
+			<p class='projDesc' id='PROCESS_projDesc'>The following are works made with <code>processing.js</code>, the very first language I learned when starting to code. This was my first introduction to the principles of <code>javascript</code> where common js methods were used to build environments including creating and maneuvering objects in the plane. <code>Processing</code> is a visual language often used for building playable creative pieces. These examples are a few experimentations in writing graphic and interactive code which reach to connect in response to the user outside and materials imported in.</p>
 		</div>
 
 		<div class='marker' id='PROCESS_m1'>
@@ -80,10 +80,19 @@
 					e.target.play()
 				}, false);
 
-			videos.addEventListener('mouseout', (e) => {
-				e.target.pause()
-			}, false); 
-		}
+				videos.addEventListener('mouseout', (e) => {
+					e.target.pause()
+				}, false); 
+			}
+
+		// turn off desc shapes in firefox
+
+		    if(navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
+ 				$('.process-angle-before').hide();
+ 				$('.process-angle-after').hide();
+ 				$('#PROCESS_projDesc').css('margin-left','15vw');
+ 				$('#process-header').css('width', '60vw');
+				} 	
 
 
 		</script>

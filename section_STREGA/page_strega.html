@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Stephanie Vizzi</title>
+		<link rel="stylesheet" type="text/css" href="../selfness.css">
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,300,500|Josefin+Sans:300,600|Source+Code+Pro:600|Raleway:300,500|Alegreya+Sans:100|Source+Sans+Pro:600|Abril+Fatface|Gravitas+One|Open+Sans|Work+Sans:400,100,200,300|Muli:200,300,400,900|Roboto:100,300,400|Amatic+SC" rel="stylesheet">
+		<script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	</head>
+
+	<a href='../index.html'><span id='circle'></span></a>
+	<div id='innerCircle'></div>
+	<span class='homeText'>take me home</span>
+
+	<body>
+		<div class='header' id='STREGA_header'>
+			<p class='projectTitle'>STREGA</p>
+			<!-- <div class='angle-before' id='STREGA-angle-L'></div>
+			<div class='angle-after' id='STREGA-angle-R'></div> -->
+			<p class='projDesc'>
+			Strega is a custom website and e-commerce app currently being built in <code>Vue.js</code>. It features a backend <code>SQLite3</code> database storing products and makes use of vuex, vue router, vue-select, sequelize, node.js and express. This is the first time I've made use of Bootstrap instead of my own CSS and has seed login and registration features with sessions and passport.</p>
+		</div>
+
+		<div class='marker' id='STREGA_m1'>
+			<div class='stage'><span class='stageText'>STAGE</span>1</div>
+			<hr class='titleHr'>
+			<p class='descHr'>The first step has been work on a backend admin page where products can be added to the database and then edited once entered. Forms take in the new and edited products which then fire custom functions handling the http requests, reset fields, errors and other checks. Products in the database are set to the state and passed in through an axios get request.</p>
+		</div>
+
+		<div class='STREGA_projSample1'>
+			<video class='STREGA_vid' id='STREGA_s1-vid1' src='media/addProduct.mov'></video>
+			<video class='STREGA_vid' id='STREGA_s1-vid2' src='media/editProduct.mov'></video>
+		</div>
+	</body>
+	
+	<script type="text/javascript">
+
+	
+	 //    console.log( $(document).height() )
+
+	 //      window.addEventListener("scroll", function(){
+		// 	var scrollTop = window.pageYOffset;
+		// 	console.log( 'You have scrolled the page by: ' + scrollTop +'px' )
+
+		// }, false)
+		
+		// if(window.pageYOffset > 575 && window.pageYOffset < 850) {
+		// 	console.log('now showing')
+		// 	}
+
+		var videos = document.querySelectorAll('video');
+		videos.muted = true;
+
+		var vid1 = $('#STREGA_s1-vid1');
+		var vid2 = $('#STREGA_s1-vid2');
+
+		$(window).scroll(function(e) {
+			if( $(document).scrollTop() > 500 && $(document).scrollTop() < 700 ) {
+				vid1.get(0).play();
+				vid1.addClass('vidPlaying');				
+			} else if( $(document).scrollTop() > 800 && $(document).scrollTop() < 1400 ) {
+				vid2.get(0).play();
+				vid2.addClass('vidPlaying');
+			} else {
+				vid1.get(0).pause();
+				vid1.removeClass('vidPlaying');
+				vid2.get(0).pause();
+				vid2.removeClass('vidPlaying');
+			}
+			
+		});
+
+
+		//home button
+
+		    $(function() {
+		      $('.homeText').hide();
+		      });  
+
+		    $('#circle').hover(
+		      function() {
+		        $('.homeText').show();
+		      },
+		      function() {
+		        $('.homeText').hide();
+		      });
+	</script>	

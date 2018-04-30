@@ -7,7 +7,7 @@
 		<script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
 	</head>
 
-	<a href='../page_selfSite.html'><span id='circle'></span></a>
+	<a href='../index.html'><span id='circle'></span></a>
 	<div id='innerCircle'></div>
 	<span class='homeText'>take me home</span>
 
@@ -60,6 +60,8 @@
 		</div>
 
 		<script type="text/javascript">
+
+		// home button	
 		
 		    $(function() {
 		      $('.homeText').hide();
@@ -72,6 +74,14 @@
 		      function() {
 		        $('.homeText').hide();
 		      });
+
+		// turn off desc shapes in firefox
+
+		    if(navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
+ 				$('.bmoreVote_angle-after').hide();
+ 				$('#bmoreVote-header').css({'width':'40vw'});
+ 				$('#beVote_m1').css('margin-top', '75vh');
+				}     
 			      
 		</script>	
 			

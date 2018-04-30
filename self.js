@@ -10,7 +10,7 @@ $(document).ready(function(){
 
 	charSpanArray.forEach(function(element, index, array){
   	// Check for the particular array elements in question
-  		if(index === 0 || index === 1 || index === 2 || index === 3 || index === 4 || index === 5){
+  		if(index === 0 || index === 1 || index === 2 || index === 3 || index === 4 || index === 5 || index === 6){
   		// if(index === 0 || index === 1 || index === 2 || index === 3 || index === 4 || index === 5 || index === 6 || index === 7 || index === 8){
     // Update those strings to include the CSS
     		array[index] = element.replace("<span>","<span class='hoverRed'>");
@@ -50,7 +50,7 @@ $(document).ready(function(){
 
 	charSpanArray.forEach(function(element, index, array){
 		if(index === 4){
-			array[index] = element.replace("<span class='hoverRed'>J</span>","<span class='hoverRed' id='letterJ'><a href='section_PROCESSING/page_processing.html'>J</a></span>");
+			array[index] = element.replace("<span class='hoverRed'>J</span>","<span class='hoverRed' id='letterJ'><a href='section_STREGA/page_strega.html'>J</a></span>");
 		}
 	});
 
@@ -62,7 +62,7 @@ $(document).ready(function(){
 
 	charSpanArray.forEach(function(element, index, array){
 		if(index === 6){
-			array[index] = element.replace("<span class='hoverRed'>1</span>","<span class='hoverRed' id='num1'><a href='page_3dprinting.html'>1</a></span>");
+			array[index] = element.replace("<span class='hoverRed'>1</span>","<span class='hoverRed' id='num1'><a href='section_PROCESSING/page_processing.html'>1</a></span>");
 		}
 	});
 
@@ -159,7 +159,7 @@ $(document).ready(function(){
 
 	$('#letterJ').hover(
 			function() {
-				$('#processing').show();
+				$('#strega').show();
 				$('.verbal').css('width', 28 + '%');
 				$('.verbal').css('margin-left', 63 + '%');			
 			},
@@ -179,7 +179,7 @@ $(document).ready(function(){
 
 	$('#num1').hover(
 			function() {
-				$('#3dPrinting').show();
+				$('#processing').show();
 				$('.verbal').css('margin-left', 63 + '%');
 				$('.verbal').css('width',33 + '%');				
 			},

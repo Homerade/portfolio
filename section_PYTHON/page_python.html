@@ -8,7 +8,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	</head>
 
-	<a href='../page_selfSite.html'><span id='circle'></span></a>
+	<a href='../index.html'><span id='circle'></span></a>
 	<div id='innerCircle'></div>
 	<span class='homeText'>take me home</span>
 
@@ -77,6 +77,17 @@
 						e.target.classList.remove('zTop')
 					}, false); 
 				}   
+
+			// turn off desc shapes in firefox
+
+		    if(navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
+ 				$('.PYTHON-angle-before').hide();
+ 				$('.PYTHON-angle-after').hide();
+				} 
+
+			// if(navigator.userAgent.toLowerCase().indexOf('Safari') != -1) {
+			// 	$('')
+			// }	
 
 		</script>
 

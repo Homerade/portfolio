@@ -8,7 +8,7 @@
 		<script src="self.js"></script>
 	</head>
 
-	<a href='../page_selfSite.html'><span id='circle'></span></a>
+	<a href='../index.html'><span id='circle'></span></a>
 	<div id='innerCircle'></div>
 	<span class='homeText'>take me home</span>
 
@@ -67,6 +67,8 @@
 
 		<script type="text/javascript">
 		
+		//home button
+		
 		    $(function() {
 		      $('.homeText').hide();
 		      });  
@@ -78,6 +80,20 @@
 		      function() {
 		        $('.homeText').hide();
 		      });
+
+		// turn off desc shapes in firefox
+		    
+		     if(navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
+ 				$('.angle-before').hide();
+ 				$('.angle-after').hide();
+				} 
+
+		// change description shapes for safari
+
+			if(navigator.userAgent.toLowerCase().indexOf('Safari') > -1) {
+				$('.angle-before').css('height', '25ex');
+				$('.angle-after').css('height', '25ex');
+			}		
 			      
 		</script>	
 			

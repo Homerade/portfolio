@@ -131,6 +131,11 @@ body {
 	width: 95%;
 	float: left;
 	margin-top: -4vh;
+	border: none;
+	border-style: none;
+	height: 1px;
+	background-color: black;
+	-webkit-appearance: none;
 }
 
 .descHr{
@@ -158,10 +163,19 @@ body {
 .angle-before, .angle-after {
  	width: 89%;
 	height: 21ex;
-	/*background-color: lightgray;*/
 	padding: 0;
 	margin: 0;
  } 
+
+/*.angle-before, .angle-after {
+ 	width: 89%;
+	height: 25ex;
+	
+	padding: 0;
+	margin: 0;
+ } */
+
+/*background-color: lightgray;*/
 
  /*original
  	-webkit-shape-outside: polygon(0 0, 100% 100%, 0 100%);
@@ -210,12 +224,12 @@ body {
 	margin-left: -7vw;
 }
 
+/*//////.................JRS S2...................//////*/
+
 #JRS_m2 {
 	float: right;
 	margin: 10vh 12vw;
 }
-
-/*//////.................JRS S2...................//////*/
 
 #JRS_s2-img1 {
 	width: 30vw;
@@ -524,6 +538,7 @@ code {
 	width: 15vw;
 	float: right;
 }
+
  /*//////.................BMORE VOTE S1...................//////*/
 
  #beVote_m1 {
@@ -609,7 +624,7 @@ code {
 	padding: 5vh 0 5vh;
 }
 
-#process-header > .projDesc {
+#PROCESS_projDesc {
 	text-align: justify;
 }
 
@@ -718,7 +733,7 @@ code {
 	margin: -50vh 0 0 35vw; /*change to -50vh 0 0 1vw for bottom left*/
 }
 
-/*//////.................PYTHON...................//////*/
+[[[[[[[[[[[[[[[[[[/*//////.................PYTHON...................//////*/]]]]]]]]]]]]]]]]]]
 
 
 #PYTHON-header{
@@ -741,9 +756,8 @@ code {
 #PYTHON-angle-R, #PYTHON-angle-L {
 	width: 45%;
 	height: 45vh;
-	/*background-color: lightgray;*/
 	padding: 0;
-	/*margin-top: 3vh;*/
+	/*background-color: lightgray;*/
 }
 
 .PYTHON-angle-before {
@@ -755,10 +769,10 @@ code {
 }   
 
 .PYTHON-angle-after {
-	/*-webkit-shape-outside: polygon(0 0, 100% 100%, 0 100%);*/
+	-webkit-shape-outside: polygon(0 0, 100% 100%, 0 100%);
 	shape-outside: polygon(0 0, 100% 100%, 100% 0);
 	float: right;
-	/*-webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%);*/
+	-webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%);
 	clip-path: polygon(0 0, 100% 100%, 100% 0);
 }
 
@@ -826,7 +840,53 @@ code {
 	margin: 0 auto;
 }
 
-/*//////.................PYTHON S2...................//////*/
+/*//////.................VUE...................//////*/
+
+#STREGA_header {
+	width: 46vw;
+	float: right;
+}
+
+#STREGA_header .projectTitle {
+	/*text-align: right;
+	margin-right: 10vw;*/
+}
+
+#STREGA_m1 {
+	margin-top: 12vh;
+}
+
+.STREGA_projSample1 {
+	clear: both;
+}
+
+#STREGA_m1 {
+	position: relative;
+}
+
+.STREGA_vid {
+	width: 60vw;
+}
+
+#STREGA_s1-vid1 {
+	position: relative;
+	margin: -30vh 0 0 35vw;
+}
+
+#STREGA_s1-vid2 {
+	position: relative;
+	margin: 12vh 0 0 15vw;
+	padding: 1vw;
+}
+
+.vidPlaying {
+	border-color: #B8B8B8;
+    box-shadow: 0 0 1rem #B8B8B8;
+}
+
+/*ffc600*/
+
+/*//////.................RESUME...................//////*/
 
 .resumePage {
 	width: 60vw;
@@ -936,6 +996,8 @@ code {
 	display: inline;
 	line-height: 1.7;
 }
+
+
 
 /*//////.................in pic scrolling...................//////*/
 
