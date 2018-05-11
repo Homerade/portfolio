@@ -7,6 +7,16 @@ Archive/
 #Tests
 test_stuff/
 
+#media files
+*.mp4
+*.ogv
+*.webm
+#-need to retroactively remove these as well:
+section_BMOREVOTE/images/OrdList_padding.png
+*.png
+#*.jpg
+#*.jpeg
+
 #Notes
 *.rtf
 
